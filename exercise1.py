@@ -7,6 +7,7 @@ logged_in = True
 @app.route("/")
 def index():
     return render_template(
-        "exercise1.html")
+        "exercise1.html",
+        logged_in = True)
 
 app.run()

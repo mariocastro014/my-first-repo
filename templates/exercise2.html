@@ -2,5 +2,10 @@
   <head>
   </head>
   <body>
+    <h1>This is the beatles band</h1>
+    {% for member in band %}
+    <p>This is {{member.name}}, which {{member.role}}</p>
+    <img src = {{member.picture}} alt="{{member.name}}">
+    {% endfor %}
   </body>
 </html>
